@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+</head>
+<body>
+
+
+	<section class="loginWrapper">
+  
+	<ul class="tabs">
+		<li class="active">Login</li>
+		<li>Register</li>
+	</ul>
+
+	<ul class="tab__content">
+    
+		<li class="active">
+			<div class="content__wrapper">
+				<form method="POST" action="">
+					<input type="email" name="email" placeholder="E-mail ose Username">
+					<input type="password" name="password" placeholder="Password">
+					<input type="submit" value="Login" name="login">
+				</form>
+			</div>
+		</li>
+   
+		<li>
+			<div class="content__wrapper">
+				<form method="POST" action="">
+					<input type="text" name="name" placeholder="Emri">
+					<input type="text" name="surname" placeholder="Mbiemri">
+					<input type="text" name="business_name" placeholder="Emri i biznesit">
+					<input type="number" min="1" max="99999999" name="business_number" placeholder="Numri i biznesit">
+					<input type="email" name="email" placeholder="E-mail">
+					<input type="text" name="phone" placeholder="Numri i telefonit">
+					<input type="text" name="username" placeholder="Username">
+					<input type="pass" name="pass" placeholder="Password">
+					<input type="repass" name="repass" placeholder="Perserit password-in">
+					<input type="submit" value="Register" name="register">
+				</form>
+			</div>
+		</li>
+	</ul>
+</section>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/login.js"></script>
+</body>
+</html>
