@@ -31,9 +31,9 @@
 
 @media (max-width: 767px) {
 	
-	.navbar.navbar-no-bg { background: #1e3451; }
-	.navbar-dark .navbar-toggler { border-color: #1e3451; }
-	.navbar-dark .navbar-toggler:focus { background: #304156; outline: 0; }
+	.navbar.navbar-no-bg { background: #021f2f; }
+	.navbar-dark .navbar-toggler { border-color: #021f2f; }
+	.navbar-dark .navbar-toggler:focus { background: #021f2f; outline: 0; }
 	.navbar-expand-md .navbar-nav .nav-link { padding-top: 0.3rem; padding-bottom: 0.3rem; }
 
 	.top-content { padding: 140px 0; }
