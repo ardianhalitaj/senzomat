@@ -319,7 +319,7 @@ img { max-width: 100%; }
 
 /***** Portfolio *****/
 
-.portfolio-box {
+.portfolio-box-image {
 	padding-top: 30px;
 	text-align: left;
 }
@@ -337,11 +337,11 @@ img { max-width: 100%; }
 	-o-transform: scale(1.25); -moz-transform: scale(1.25); -webkit-transform: scale(1.25); -ms-transform: scale(1.25); transform: scale(1.25);
 }
 
-.portfolio-box h3 {
+.portfolio-box h3,h5 {
 	margin-top: 30px;
 }
-.portfolio-box h3 a { color: #555; }
-.portfolio-box h3 a:hover, .portfolio-box h3 a:focus { color: #9b59b6; }
+.portfolio-box h3,h5 a { color: #555; }
+.portfolio-box h3,h5 a:hover, .portfolio-box h3 a:focus { color: #9b59b6; }
 
 .portfolio-box h3 i {
 	padding-left: 10px;
