@@ -548,11 +548,12 @@ footer {
   font-weight: 500;
 }
 
+
 .fullscreen-video-wrap{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 580px;
+  height: 480px;
   overflow: hidden;
 }

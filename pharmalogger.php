@@ -1,9 +1,31 @@
+<?php
+
+require_once "config.php";
+session_Start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
+<?php
+
+if($_SERVER['REQUEST_METHOD']=='POST')
+{
+	if(isset($_POST['login']))
+	{
+		require 'login.php';
+	}
+	elseif(isset($_POST[register]))
+	{
+		require 'register.php';
+	}
+
+}
+?>
+
 <body>
 	<section class="loginWrapper">
 	<ul class="tabs">
@@ -13,7 +35,7 @@
 	<ul class="tab__content">
 		<li class="active">
 			<div class="content__wrapper">
-				<form method="POST" action="login.php">
+				<form method="POST" action="pharmalogger.php">
 					<input type="text" name="username" placeholder="Username">
 					<input type="password" name="password" placeholder="Password">
 					<input type="submit" value="Login" name="login">
@@ -22,7 +44,7 @@
 		</li>
 		<li>
 			<div class="content__wrapper">
-				<form method="POST" action="register.php">
+				<form method="POST" action="pharmalogger.php">
 					<input type="text" name="name" placeholder="Emri">
 					<input type="text" name="surname" placeholder="Mbiemri">
 					<input type="text" name="business_name" placeholder="Emri i biznesit">
