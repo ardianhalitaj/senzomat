@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
     /*
         Background slideshow
     */
-    $('.top-content').backstretch("assets/img/backgrounds/1.jpg");
+//    $('.top-content').backstretch([{ url: "assets/videos/160708_CircuitBoards_098_1080p.mp4", duration: 6000, mute: true, alignY: 0, isVideo: true }]);//assets/img/backgrounds/1.jpg");
     $('.call-to-action-container').backstretch("assets/img/backgrounds/1.jpg");
     $('.testimonials-container').backstretch("assets/img/backgrounds/1.jpg");
     
