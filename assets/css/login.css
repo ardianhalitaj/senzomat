@@ -13,8 +13,8 @@
 	display: block;
 	position: absolute;
   margin: auto;
-	width: 500px;
-	height: 750px;
+	width: 440px;
+	height: 650px;
 	position: fixed;
   top: 0;
   bottom: 0;
@@ -57,7 +57,7 @@ nav {
   width: 100%;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
-	margin-bottom: 5px;
+  margin-bottom: 4.5px;
 }
 
 .tabs > li {
@@ -65,7 +65,7 @@ nav {
   display: table-cell;
   list-style: none;
   text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -126,11 +126,11 @@ nav {
 
 	form input {
 		border: none;
-		padding: 12px;
-		font-size: 16px;
-		margin: 12px 0px;
-		width: 450px;
-		border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 8px 0px;
+    width: 400px;
+    border-radius: 3px;
 	}
 
 	form input:first-child {margin-top: 8px;}
@@ -148,16 +148,43 @@ nav {
 
 	form [type="submit"] {
 		background: #009eb9;
-	  color: #FFF;
-	  padding: 24px;
-	  width: 100%;
-	  cursor: pointer;
-	  border-radius: 0 0 5px 5px;
-	  font-weight: 600;
-	  font-size: 18px;
+    color: #FFF;
+    padding: 18px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+    font-weight: 600;
+    font-size: 16px;
 	}
 
 	::-webkit-input-placeholder {color: #93a8c4;}
 	:-moz-placeholder           {color: #93a8c4;}
 	::-moz-placeholder          {color: #93a8c4;}
 	:-ms-input-placeholder      {color: #93a8c4;}
+
+	@media (max-width: 767px) {
+	 	/* Login & Register */
+		.loginWrapper { width: 280px; height: 570px; }
+		.tabs li { padding: 12px; font-size: 15px; }
+		.tab__content > li .content__wrapper { padding-top: 10px;}
+		form input { font-size: 12px; width: 250px;}
+		form [type="submit"] { padding: 12px; font-size: 15px;}
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		/* Login & Register */
+		.loginWrapper { width: 550px; height: 800px; }
+		.tabs li { padding: 20px; font-size: 24px; }
+		.tab__content > li .content__wrapper { padding-top: 20px;}
+		form input { font-size: 18px; width: 505px; padding: 14px; }
+		form [type="submit"] { padding: 22px; font-size: 24px;}
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		/* Login & Register */
+	 .loginWrapper { width: 670px; height: 1070px; }
+ 	 .tabs li { padding: 20px; font-size: 24px; }
+ 	 .tab__content > li .content__wrapper { padding-top: 20px;}
+ 	 form input { font-size: 20px; width: 600px; padding: 18px; }
+ 	 form [type="submit"] { padding: 22px; font-size: 24px;}
+ 	}
