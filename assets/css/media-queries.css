@@ -40,6 +40,7 @@
 	.top-content .top-big-link { margin-top: 25px; }
 	.top-content .top-big-link a.btn { margin-top: 10px; }
 	.top-content .fullscreen-video-wrap { height: 450px; }
+	#video-bg { margin-left:-200px;} 
 
 	.section-description p { padding: 0; }
 
